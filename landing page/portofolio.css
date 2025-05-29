@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: Arial, sans serif;
+  background-color: lightblue;
+  color: aliceblue;
+  margin: 0;
+}
+
+header {
+  background-color: black;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px skyblue;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav .logo img {
+  height: 30px;
+  border-radius: 10px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px; 
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a.active{
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.hero{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+  to right,
+  rgba(4, 9, 30, 0.555),
+  rgba(4, 9, 30, 0.555)
+  ),
+  url("hp\ realme.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  width: 90%;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -59%);
+  text-align: center;
+}
+
+.hero-text h1 {
+  color: #fff;
+  font-size: 50px;
+  font-family: Arial;
+  font-optical-sizing: auto;
+  font-weight: weight;
+}
+
+.hero-text p {
+  color: #fff;
+  font-size: 20px;
+  font-family: Arial, Sans-Serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+}
+
+.hero-btn {
+  background-color: rgba(0, 0, 0, 0.438);
+}
+
+.hero-button {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  border: 1px solid lightblue;
+  background: lightblue;
+  transition: 0.3s ease;
+}
+
+.about-section .container{
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  color: black;
+  text-align: center;
+}
+
+.about-section h2{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.about-section p{
+  margin-top: 10px;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.mision-vision-section .container{
+  padding: 60px 0;
+  display: flex;
+  color: black;
+  padding-top: 1px;
+  background-color: #f7f7f7;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mision-vision-section .mision,
+.mision-vision-section .vision{
+  width: 48%;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.mision-vision-section h3{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.mision-vision-section p{
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.mision-vision-section ul{
+  margin-top: 20px;
+  list-style: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.mision-vision-section button{
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #38a169;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mision-vision-section button:hover{
+  background-color: #2f855a;
+}
+
+.logo-section{
+  background-color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.logo-section .container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.logo-section img{
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+.clients-section{
+  padding: 60px 0;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.clients-section .client{
+  width: 48%;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.client {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.clients-section h3{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.clients-section p{
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.portofolio-section{
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  text-align: center;
+  color: black;
+}
+
+.portofolio-section h2{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.portofolio-section p{
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.portofolio-buttons{
+  margin-top: 20px;
+}
+
+.portofolio-buttons button{
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.portofolio-buttons .active{
+  background-color: #38a169;
+  color: white;
+}
+
+.portofolio-buttons button:hover{
+  background-color: #2f855a;
+  color: white;
+}
+
+.portofolio-gallery{
+  margin-top: 4opx;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portofolio-gallery img{
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 60px 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.footer-column {
+  width: 23%;
+}
+
+.footer-column h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-column p,
+.footer-column ul {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-top: 10px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+color: gray;
+}
+
+.footer-column form {
+margin-top: 20px;
+}
+
+.footer-column input {
+width: 100%;
+padding: 10px;
+border: none;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.footer-column button {
+width: 100%;
+padding: 10px;
+background-color: #38a169;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.footer-column button:hover {
+background-color: #2f855a;
+}
+
+.footer span{
+  margin-top: 1rem;
+  display: block;
+  font-family: var(--Playfair);
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: small;
+}
